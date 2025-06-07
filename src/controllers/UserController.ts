@@ -70,7 +70,7 @@ export default class UserController {
       delete (userObj as any).password;
       res.status(200).json(userObj);
     } catch (error) {
-      console.error(`UserController.getAll() -> Error: ${error}`);
+      console.error(`UserController.login() -> Error: ${error}`);
       next(error);
     }
   }
